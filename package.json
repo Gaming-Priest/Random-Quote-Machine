@@ -10,7 +10,7 @@
     "clean": "rm dist/bundle.js",
     "install-dep": "npm i @babel/preset-env @babel/preset-react --no-bin-links",
     "build-dev": "webpack --watch --mode development",
-    "build-prod": "webpack --mode production",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server"
   },
   "dependencies": {
