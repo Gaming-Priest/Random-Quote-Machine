@@ -6,7 +6,7 @@ const App = props => {
    const [prevQuote,setPrevQuote] = useState({});
 
    const getData = async () => {
-      const response = await fetch('../quotes.json');
+      const response = await fetch('https://raw.githubusercontent.com/Gaming-Priest/Random-Quote-Machine/master/quotes.json');
       const data = await response.json()
          .catch(error => { alert('request time out check your connection') })
       const result = data.quotes.map(item => item)
